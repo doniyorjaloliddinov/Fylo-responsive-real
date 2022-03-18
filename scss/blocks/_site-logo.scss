@@ -1,0 +1,11 @@
+.site-logo {
+    width: 175px;
+    height: 52px;   
+}
+
+@media only screen and (max-width: 500px) {
+  .site-logo {
+      width: 75px;
+      height: 32px;
+  }
+}

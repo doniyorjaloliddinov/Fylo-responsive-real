@@ -1,0 +1,51 @@
+.hero {
+    background-image: url("../img/hero-bgimg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgb(27,35,48);
+}
+
+.hero__inner {
+    padding-top: 75px;
+}
+
+.hero__heading {
+    max-width: 730px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hero__content {
+    max-width: 590px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hero-btn {
+    margin-left: 160px;
+}
+
+@media only screen and (max-width: 530px) {
+    .hero__heading {
+        font-size: 36px;
+        line-height: 52px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .hero__heading {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .hero__content {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
