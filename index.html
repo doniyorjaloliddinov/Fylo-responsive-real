@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fylo</title>
     <link rel="icon" href="./img/site-logo.svg" type="image/svg">
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -16,20 +17,25 @@
     <header class="header">
         <div class="header__container container">
             <div class="header__inner">
-                <img class="site-logo" src="./img/site-logo.svg" alt="site-logo" width="175" height="52">
+                <div class="site-logo-wrapper">
+                    <a class="site-logo-wrapper__link" href="index.html">
+                        <img class="site-logo-wrapper__img" src="./img/site-logo.svg" alt="site-logo" width="175"
+                            height="52">
+                    </a>
+                </div>
 
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__items">
-                            <a href="#" class="navbar__link">Features</a>
+                            <a href="#features" class="navbar__link">Features</a>
                         </li>
 
                         <li class="navbar__items">
-                            <a href="#" class="navbar__link">Team</a>
+                            <a href="#directors" class="navbar__link">Team</a>
                         </li>
 
                         <li class="navbar__items">
-                            <a href="#" class="navbar__link">Sign In</a>
+                            <a href="#sign-up" class="navbar__link">Sign In</a>
                         </li>
 
                     </ul>
@@ -65,7 +71,7 @@
         <section class="features">
             <div class="features__container container">
                 <div class="features__inner">
-                    <div class="features__list-wrapper">
+                    <div class="features__list-wrapper" id="features">
                         <ul class="features__list">
                             <li class="features__items">
                                 <img class="features__img" src="./img/pc.png" alt="Computer" width="104" height="104">
@@ -106,14 +112,21 @@
         <section class="productive">
             <div class="productive__container container">
                 <div class="produvtive__inner">
-                    <img class="productive__img" src="./img/productive-bgimg.png" alt="work process" width="615" height="465">
+                    <img class="productive__img" src="./img/productive-bgimg.png" alt="work process" width="615"
+                        height="465">
 
                     <div class="productive__content-wapper">
                         <h3 class="productive__heading">Stay productive,
                             wherever you are</h3>
-                        <p class="productive__content">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. <br><br>
-                            Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-                        <a class="productive__link" href="#" >See how Fylo works</a>
+                        <p class="productive__content">Never let location be an issue when accessing your files. Fylo
+                            has you covered for all of your file storage needs. <br><br>
+                            Securely share files and folders with friends, family and colleagues for live collaboration.
+                            No email attachments required.</p>
+                        <span class="productive__span">
+                            <a class="productive__link" href="#">See how Fylo works</a>
+                            <img class="productive__link-img" src="./img/productive-link.svg" alt="line" width="12"
+                                height="12">
+                        </span>
                     </div>
                 </div>
             </div>
@@ -124,31 +137,39 @@
         <!-- DIRECTORS -->
         <section class="directors">
             <div class="directors__container container">
-                <div class="directors__inner">
+                <div class="directors__inner" id="directors">
                     <ul class="directors__list">
                         <li class="directors__items">
-                            <p class="directors__content">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-                            
+                            <p class="directors__content">Fylo has improved our team productivity by an order of
+                                magnitude. Since making the switch our team has become a well-oiled collaboration
+                                machine.</p>
+
                             <div class="directors__customer-info-wrapper">
-                                <img class="directors-img" src="./img/satish.png" alt="Satish Patel" width="24" height="24">
+                                <img class="directors-img" src="./img/satish.png" alt="Satish Patel" width="24"
+                                    height="24">
                                 <p class="directors__name">Satish Patel</p>
                                 <span class="directors__prof">Founder & CEO, Huddle</span>
                             </div>
                         </li>
 
                         <li class="directors__items">
-                            <p class="directors__content">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-                            
+                            <p class="directors__content">Fylo has improved our team productivity by an order of
+                                magnitude. Since making the switch our team has become a well-oiled collaboration
+                                machine.</p>
+
                             <div class="directors__customer-info-wrapper">
-                                <img class="directors-img" src="img/bruce.png" alt="Bruce McKenzie" width="24" height="24">
+                                <img class="directors-img" src="img/bruce.png" alt="Bruce McKenzie" width="24"
+                                    height="24">
                                 <p class="directors__name">Bruce McKenzie</p>
                                 <span class="directors__prof">Founder & CEO, Huddle</span>
                             </div>
                         </li>
 
                         <li class="directors__items">
-                            <p class="directors__content">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-                            
+                            <p class="directors__content">Fylo has improved our team productivity by an order of
+                                magnitude. Since making the switch our team has become a well-oiled collaboration
+                                machine.</p>
+
                             <div class="directors__customer-info-wrapper">
                                 <img class="directors-img" src="./img/iva.png" alt="Iva Boyd" width="24" height="24">
                                 <p class="directors__name">Iva Boyd</p>
@@ -162,7 +183,122 @@
         </section>
         <!-- DIRECTORS -->
 
+
+        <!-- FORM -->
+
+        <section class="form-wrapper">
+
+            <div class="form-wrapper__container container">
+                <div class="test">
+                <h4 class="form-wrapper__heading">Get early access today</h4>
+                    <p class="form-wrapper__content">It only takes a minute to sign up and our free starter tier is
+                        extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                    <form class="form" action="https://echo.htmlacademy.ru/" target="POST" id="sign-up">
+                        <div class="form__inner">
+                            <label class="form__label" for="email">
+                                <input class="form__input" id="email" type="email" placeholder="email@example.com"
+                                    required>
+                            </label>
+                            <button class="form__btn site-btns">Get Started For Free</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!-- FORM -->
+
     </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="site-logo-wrapper">
+                <a class="site-logo-wrapper__link" href="index.html">
+                    <img class="site-logo-wrapper__img" src="./img/site-logo.svg" alt="site-logo" width="175"
+                        height="52">
+                </a>
+            </div>
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <p class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+
+                <ul class="footer__contact-list">
+                    <li class="footer__contact__items">
+                        <img class="footer__contact-img" src="./img/phone-in-talk.svg" alt="telephone number" width="24"
+                            height="24">
+                        <a class="footer__contact-link" href="tel:+1-543-123-4567">+1-543-123-4567</a>
+                    </li>
+
+                    <li class="footer__contact__items">
+                        <img class="footer__contact-img email-img" src="./img/email.svg" alt="e-mail" width="24" height="24">
+                        <a class="footer__contact-link" href="email:example@fylo.com">example@fylo.com</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer__about-list">
+                    <li class="footer__about-item">
+                        <a class="footer__about-link footer__all-links" href="#">About Us</a>
+                    </li>
+
+                    <li class="footer__about-item">
+                        <a class="footer__about-link footer__all-links" href="#">Jobs</a>
+                    </li>
+
+                    <li class="footer__about-item">
+                        <a class="footer__about-link footer__all-links" href="#">Press</a>
+                    </li>
+
+                    <li class="footer__about-item">
+                        <a class="footer__about-link footer__all-links" href="#">Blog</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer__contact-us-list">
+                    <li class="footer__contact-us-items">
+                        <a class="footer__contact-us-links footer__all-links" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="footer__contact-us-items">
+                        <a class="footer__contact-us-links footer__all-links" href="#">Terms</a>
+                    </li>
+
+                    <li class="footer__contact-us-items">
+                        <a class="footer__contact-us-links footer__all-links" href="#">Privicy</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer__socnet-list">
+                    <li class="footer__socnet-items">
+                        <a class="footer__socnet-link" href="https://www.facebook.com/" target="_blank">
+                            <img class="footer__socnet-img facebook-img" src="./img/facebook.svg" alt="facebook" width="32"
+                                height="31">
+                        </a>
+                    </li>
+                    <li class="footer__socnet-items">
+                        <a class="footer__socnet-link" href="https://www.instagram.com/accounts/login/" target="_blank">
+                            <img class="footer__socnet-img instagram-img" src="./img/instagram.svg" alt="instagram" width="32"
+                                height="31">
+                        </a>
+                    </li>
+                    <li class="footer__socnet-items">
+                        <a class="footer__socnet-link" href="https://twitter.com" target="_blank">
+                            <img class="footer__socnet-img twitter-img" src="./img/twitter.svg" alt="twitter" width="32"
+                                height="31">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
 
 </body>
 

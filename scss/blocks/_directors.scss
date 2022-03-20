@@ -1,0 +1,75 @@
+.directors {
+    padding-top: 150px;
+    padding-bottom: 65px;
+    background-color: rgb(24,31,43);
+}
+
+.directors__inner {
+
+}
+
+
+.directors__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     
+}
+
+.directors__items {
+    max-width: 360px;
+    padding: 25px;
+    background-color: rgb(32, 42, 60);
+}
+
+.directors__items:nth-child(1) {
+    position: relative;
+}
+
+.directors__items:nth-child(1)::before {
+    width: 65px;
+    height: 50px;
+    margin-top: -65px;
+    margin-left: -45px;
+    position: absolute;
+    background-image: url("../img/quotes.png");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.directors__items:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+
+.directors__content {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+}
+
+.directors__name {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+}
+
+.directors__prof {
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1135px) {
+  .directors__list {
+      flex-direction: column;
+  }
+
+  .directors__items {
+      margin-top: 25px;
+  }
+}

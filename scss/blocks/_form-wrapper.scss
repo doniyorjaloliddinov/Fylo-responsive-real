@@ -1,0 +1,47 @@
+.form-wrapper {
+    background-color: rgb(24,31,43);
+}
+
+.test{
+    max-width: 860px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+    transform: translate(10px,120px);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+    border-radius: 9px;
+    background-color: rgb(27, 35, 48);
+}
+
+.form-wrapper__heading {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.form-wrapper__content {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 880px) {
+  .test {
+      max-width: 660px;
+      padding: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .form-wrapper__heading {
+      margin: 0;
+  }
+}

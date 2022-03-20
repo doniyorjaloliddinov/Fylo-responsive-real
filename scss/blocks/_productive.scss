@@ -32,21 +32,24 @@
     color: rgb(255, 255, 255);
 }
 
+.productive__span {
+    cursor: pointer;
+    border-bottom: 1px solid #62e0d9;
+}
+
 .productive__link {
     position: relative;
     font-size: 16px;
     line-height: 19px;
     color: rgb(98, 224, 217);
     text-decoration: none;
-    border-bottom: 1px solid rgb(98, 224, 217);
 }
 
-.productive__link::after {
-    content: "";
-    background-image: url("../img/productive-link.svg");
-    background-repeat: no-repeat;
-    position: absolute;
+
+.productive__link:hover {
+    color: rgb(255, 215, 0);
 }
+    
 
 @media only screen and (max-width: 1000px) {
   .produvtive__inner {
@@ -62,6 +65,10 @@
   .productive__img {
       width: 465px;
       height: 400px;
+  }
+
+  .productive__heading {
+      line-height: 45px;
   }
 }
 
